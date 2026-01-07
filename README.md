@@ -12,16 +12,13 @@ La aplicación permite realizar operaciones de lectura, inserción, modificació
 
 ### Tecnologías Utilizadas
 
-* 
-**Java SE** con librería **Swing** para la interfaz.
+* **Java SE** con librería **Swing** para la interfaz.
 
 
-* 
-**BaseX** como motor de base de datos XML.
+* **BaseX** como motor de base de datos XML.
 
 
-* 
-**XQuery** para las consultas y actualizaciones de datos.
+* **XQuery** para las consultas y actualizaciones de datos.
 
 
 
@@ -44,16 +41,13 @@ Al inicio del programa, la clase `GestionDatos` procesa el archivo XML principal
 
 Se han implementado consultas almacenadas en scripts `.xq` ejecutadas a través de la clase `ConsultasBaseDatos`:
 
-* 
-**Filtrado por año:** Matrícula de vehículos fabricados en 2024.
+* **Filtrado por año:** Matrícula de vehículos fabricados en 2024.
 
 
-* 
-**Filtrado por kilómetros:** Marca y modelo de vehículos con menos de 75,000 km.
+* **Filtrado por kilómetros:** Marca y modelo de vehículos con menos de 75,000 km.
 
 
-* 
-**Búsqueda avanzada:** Propietarios de un modelo específico (Golf) y listado de mecánicos.
+* **Búsqueda avanzada:** Propietarios de un modelo específico (Golf) y listado de mecánicos.
 
 
 
@@ -61,16 +55,13 @@ Se han implementado consultas almacenadas en scripts `.xq` ejecutadas a través 
 
 La aplicación permite modificar la base de datos en tiempo real mediante sentencias de actualización:
 
-* 
-**Actualización de valores:** Cambio de kilometraje a un vehículo específico por su matrícula.
+* **Actualización de valores:** Cambio de kilometraje a un vehículo específico por su matrícula.
 
 
-* 
-**Renombrado de nodos:** Modificación masiva del nodo `<kilometros>` por `<kms>` en toda la colección.
+* **Renombrado de nodos:** Modificación masiva del nodo `<kilometros>` por `<kms>` en toda la colección.
 
 
-* 
-**Inserción de registros:** Registro de nuevas reparaciones incluyendo matrícula, fecha y datos del mecánico.
+* **Inserción de registros:** Registro de nuevas reparaciones incluyendo matrícula, fecha y datos del mecánico.
 
 
 
@@ -82,27 +73,22 @@ La aplicación permite modificar la base de datos en tiempo real mediante senten
 
 Gestiona la conexión y ejecución de consultas mediante los métodos:
 
-* 
-`AbrirBaseDatos(String consulta)`: Crea/abre la base de datos `Taller` usando el contexto de BaseX.
+* `AbrirBaseDatos(String consulta)`: Crea/abre la base de datos `Taller` usando el contexto de BaseX.
 
 
-* 
-`leerArchivo(String ruta)`: Carga los scripts `.xq` externos para su ejecución.
+* `leerArchivo(String ruta)`: Carga los scripts `.xq` externos para su ejecución.
 
 
-* 
-`Actualizar(String consulta, String update)`: Ejecuta simultáneamente una consulta de selección y una de modificación.
+* `Actualizar(String consulta, String update)`: Ejecuta simultáneamente una consulta de selección y una de modificación.
 
 
 
 ### Interfaz de Usuario
 
-* 
-**Panel de Consultas:** Resultados mostrados en tablas dinámicas.
+* **Panel de Consultas:** Resultados mostrados en tablas dinámicas.
 
 
-* 
-**Panel de Modificaciones:** Uso de `RadioButtons` y `TextAreas` para gestionar los cambios y visualizar los nodos afectados.
+* **Panel de Modificaciones:** Uso de `RadioButtons` y `TextAreas` para gestionar los cambios y visualizar los nodos afectados.
 
 
 
