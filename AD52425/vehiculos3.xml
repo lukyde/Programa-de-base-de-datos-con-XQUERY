@@ -1,0 +1,11 @@
+
+<vehiculo afabricacion="2023">
+<matricula>3333CCC</matricula>
+<propietario>
+<apellidos>Luna Molina</apellidos>
+<nombre>Jose</nombre>
+</propietario>
+<marca>Lexus</marca>
+<modelo>NX</modelo>
+<kilometros>70000</kilometros>
+</vehiculo>

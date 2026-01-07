@@ -1,0 +1,11 @@
+
+<vehiculo afabricacion="2023">
+<matricula>4444CCC</matricula>
+<propietario>
+<apellidos>Marin Marin</apellidos>
+<nombre>Julio</nombre>
+</propietario>
+<marca>Renault</marca>
+<modelo>Megane</modelo>
+<kilometros>85000</kilometros>
+</vehiculo>
